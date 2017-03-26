@@ -1,17 +1,21 @@
 var mix = require('laravel-mix');
 
-// Theme
 
-mix.less('src/theme/theme.less', 'dist/theme.css');
-
-// Custom
+// Custom CSS and JS
 
 mix.styles([
     'src/custom/cuthere.css',
     'src/custom/reiven.css'
 ], 'dist/custom.css');
 
-// Vendor
+// Customized Bootstrap CSS
+
+mix.less(
+    'src/theme/theme.less',
+    'dist/theme.css'
+);
+
+// Vendor CSS and JS
 
 mix.styles([
     'node_modules/jquery-ui-dist/jquery-ui.css',
