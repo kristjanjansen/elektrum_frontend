@@ -26,3 +26,7 @@ npm run dev
 
 ### Compiling the scripts for production
 
+```sh
+npm run production
+```
+
