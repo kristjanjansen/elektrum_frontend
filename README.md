@@ -18,7 +18,7 @@ cd elektrum_frontend
 yarn
 
 # If you do not have Yarn:
-#
+
 # npm install
 ```
 
