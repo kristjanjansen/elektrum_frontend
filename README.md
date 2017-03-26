@@ -16,6 +16,10 @@ It's assumed you have NodeJS installed and optionally Yarn https://yarnpkg.com/e
 git clone https://github.com/kristjanjansen/elektrum_frontend
 cd elektrum_frontend
 yarn
+
+# If you do not have Yarn:
+#
+# npm install
 ```
 
 ### Compiling the scripts for dev
