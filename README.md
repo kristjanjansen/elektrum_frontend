@@ -18,7 +18,7 @@ cd elektrum_frontend
 yarn
 
 # If you do not have Yarn:
-#
+
 # npm install
 ```
 
@@ -31,6 +31,6 @@ npm run dev
 ### Compiling the scripts for production
 
 ```sh
-npm run production
+npm run build
 ```
 
