@@ -1,4 +1,12 @@
-## Elektrum frontend experiments
+## Elektrum frontend
+
+### About
+
+This projects implements a modern CSS + JS workflow but considers the legacy implications so all existing Boostrap styling and jQuery/Backbone based code is preserved.
+
+The project uses [Laravel Mix](https://laravel.com/docs/5.4/mix) a simple Webpack wrapper.
+
+All CSS/JS dependencies are listed in `package.json` and merged and minified in `webpack.mix.js`. 
 
 ### Installation
 
@@ -10,8 +18,11 @@ cd elektrum_frontend
 yarn
 ```
 
-### Development
+### Compiling the scripts for dev
 
 ```sh
 npm run dev
 ```
+
+### Compiling the scripts for production
+
