@@ -36,6 +36,7 @@ mix.styles([
 mix.scripts([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/bootstrap/dist/js/bootstrap.js',
+    'node_modules/parsleyjs/dist/parsley.js',
     'node_modules/datatables.net/js/jquery.dataTables.js',
     'node_modules/datatables.net-bs/js/dataTables.bootstrap.js',
     'node_modules/select2/dist/js/select2.js',
