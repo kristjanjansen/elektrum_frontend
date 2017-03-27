@@ -5,6 +5,8 @@ mix.options({
     publicPath: 'prelive'
 });
 
+mix.js('prelive_protected/main.js', 'prelive')
+/*
 // Theme CSS
 
 mix.less(
@@ -62,7 +64,7 @@ mix.styles([
 mix.scripts([
     'prelive_protected/js/custom/custom.js',
 ], 'prelive/js/custom.js')
-
+*/
 
 /*
 
