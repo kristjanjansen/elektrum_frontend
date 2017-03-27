@@ -3,34 +3,42 @@
 
 $(function() {
 
+    // Datatable
+
     $('#datatable').DataTable();
+
+    // Select2
 
     $('#select2').select2()
 
+    // Tokenfield
+
     $('#tokenfield').tokenfield()
-
-    // jQuery daterange
-
-    //$('#daterange').daterangepicker()
 
     // jQuery masked input 
 
     //    It's autoloaded
 
-    // Bootstrap datepicker
-
-    $('#datepicker').datepicker()
-
-    // jQuery UI datetimepicker
-
-    //$('#datetimepicker').datetimepicker()
+    // Fancybox
 
     $('#fancybox').fancybox()
 
-    // Bootstrap bootbox
+    // Bootbox
 
     $('#bootbox').on('click', function() {
         bootbox.alert("This is Bootbox")
     })
+
+    // jQuery daterange
+
+    $('#daterange').daterangepicker()
+
+    // jQuery UI datetimepicker
+
+    $('#datetimepicker').datetimepicker()
+
+    // Bootstrap datepicker
+
+    $('#datepicker').datepicker()
 
 });

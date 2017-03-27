@@ -41,9 +41,9 @@ mix.scripts([
     'node_modules/select2/dist/js/select2.js',
     'node_modules/moment/moment.js',
     'node_modules/daterangepicker/daterangepicker.js',
+    'node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.js',
     'node_modules/jquery-ui-dist/jquery-ui.js',
     'node_modules/jquery-ui-timepicker-addon/dist/jquery-ui-timepicker-addon.js',
-    'node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.js',
     'node_modules/fancybox/dist/js/jquery.fancybox.js',
     'node_modules/bootstrap-tokenfield/dist/bootstrap-tokenfield.js',
     'node_modules/jquery-form/src/jquery.form.js',
@@ -53,10 +53,9 @@ mix.scripts([
     'node_modules/jquery-masked-input/dist/jquery.masked-input.js',
 ], 'dist/vendor.js')
 
-mix.copy(
-    'node_modules/fancybox/dist/img/*',
-    'img'
-)
+mix.copy('node_modules/fancybox/dist/img/*', 'img')
+
+mix.copy('node_modules/jquery-ui-dist/images/*', 'dist/images');
 
 /*
 
