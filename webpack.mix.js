@@ -1,4 +1,4 @@
-var mix = require('laravel-mix');
+var mix = require('laravel-mix')
 
 
 // Custom CSS and JS
@@ -6,18 +6,18 @@ var mix = require('laravel-mix');
 mix.styles([
     'css/custom/cuthere.css',
     'css/custom/reiven.css'
-], 'dist/custom.css');
+], 'dist/custom.css')
 
 mix.scripts([
     'js/custom.js',
-], 'dist/custom.js');
+], 'dist/custom.js')
 
 // Customized Bootstrap CSS
 
 mix.less(
     'css/theme/theme.less',
     'dist/theme.css'
-);
+)
 
 // Vendor CSS and JS
 
@@ -29,8 +29,8 @@ mix.styles([
     'node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css',
     'node_modules/jquery-ui-dist/jquery-ui.css',
     'node_modules/jquery-ui-timepicker-addon/dist/jquery-ui-timepicker-addon.css',
-    'node_modules/fancybox/dist/css/jquery.fancybox.css',
     'node_modules/bootstrap-tokenfield/dist/css/bootstrap-tokenfield.css',
+    'node_modules/fancybox/dist/css/jquery.fancybox.css',
 ], 'dist/vendor.css');
 
 mix.scripts([
@@ -51,7 +51,12 @@ mix.scripts([
     'node_modules/backbone/backbone.js',
     'node_modules/bootbox/bootbox.js',
     'node_modules/jquery-masked-input/dist/jquery.masked-input.js',
-], 'dist/vendor.js');
+], 'dist/vendor.js')
+
+mix.copy(
+    'node_modules/fancybox/dist/img/*',
+    'img'
+)
 
 /*
 

@@ -7,6 +7,8 @@ $(function() {
 
     $('#select2').select2()
 
+    $('#tokenfield').tokenfield()
+
     // jQuery daterange
 
     //$('#daterange').daterangepicker()
@@ -22,6 +24,8 @@ $(function() {
     // jQuery UI datetimepicker
 
     //$('#datetimepicker').datetimepicker()
+
+    $('#fancybox').fancybox()
 
     // Bootstrap bootbox
 
