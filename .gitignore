@@ -1,8 +1,8 @@
 .DS_Store
 node_modules
-prelive/fonts
-prelive/css
-prelive/js
+prelive/fonts/
+prelive/css/
+prelive/js/
 prelive/mix-manifest.json
 npm-debug.log
 yarn-error.log
