@@ -1,23 +1,14 @@
 var mix = require('laravel-mix')
 
-
-// Custom CSS and JS
-
-mix.styles([
-    'css/custom/cuthere.css',
-    'css/custom/reiven.css'
-], 'dist/custom.css')
-
-mix.scripts([
-    'js/custom.js',
-], 'dist/custom.js')
-
-// Customized Bootstrap CSS
+// Theme CSS
 
 mix.less(
-    'css/theme/theme.less',
-    'dist/theme.css'
+    'prelive_protected/css/theme/theme.less',
+    'prelive/css'
 )
+.options({
+    processCssUrls: false
+});
 
 // Vendor CSS and JS
 
@@ -31,7 +22,10 @@ mix.styles([
     'node_modules/jquery-ui-timepicker-addon/dist/jquery-ui-timepicker-addon.css',
     'node_modules/bootstrap-tokenfield/dist/css/bootstrap-tokenfield.css',
     'node_modules/fancybox/dist/css/jquery.fancybox.css',
-], 'dist/vendor.css');
+], 'prelive/css/vendor.css')
+.options({
+    processCssUrls: false
+});
 
 mix.scripts([
     'node_modules/jquery/dist/jquery.js',
@@ -52,11 +46,24 @@ mix.scripts([
     'node_modules/backbone/backbone.js',
     'node_modules/bootbox/bootbox.js',
     'node_modules/jquery-masked-input/dist/jquery.masked-input.js',
-], 'dist/vendor.js')
+], 'prelive/js/vendor.js')
 
-mix.copy('node_modules/fancybox/dist/img/*', 'img')
+// Additional assets
 
-mix.copy('node_modules/jquery-ui-dist/images/*', 'dist/images');
+mix.copy('node_modules/fancybox/dist/img/*', 'prelive/img')
+mix.copy('node_modules/jquery-ui-dist/images/*', 'prelive/css/images');
+
+// Custom CSS and JS
+
+mix.styles([
+    'prelive_protected/css/custom/cuthere.css',
+    'prelive_protected/css/custom/reiven.css'
+], 'prelive/css/custom.css')
+
+mix.scripts([
+    'prelive_protected/js/custom/custom.js',
+], 'prelive/js/custom.js')
+
 
 /*
 
