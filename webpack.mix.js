@@ -1,14 +1,16 @@
 var mix = require('laravel-mix')
 
+mix.options({
+    //processCssUrls: false,
+    publicPath: 'prelive'
+});
+
 // Theme CSS
 
 mix.less(
     'prelive_protected/css/theme/theme.less',
     'prelive/css'
 )
-.options({
-    processCssUrls: false
-});
 
 // Vendor CSS and JS
 
@@ -23,9 +25,6 @@ mix.styles([
     'node_modules/bootstrap-tokenfield/dist/css/bootstrap-tokenfield.css',
     'node_modules/fancybox/dist/css/jquery.fancybox.css',
 ], 'prelive/css/vendor.css')
-.options({
-    processCssUrls: false
-});
 
 mix.scripts([
     'node_modules/jquery/dist/jquery.js',
@@ -67,7 +66,7 @@ mix.scripts([
 
 /*
 
-Possible additions:
+Possible additions to vendor JS:
 
     yarn add html5shiv excanvas jquery-placeholder
 
