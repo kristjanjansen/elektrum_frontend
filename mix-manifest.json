@@ -1,8 +1,0 @@
-{
-  "/mix.js": "/mix.js",
-  "/dist/theme.css": "/dist/theme.css",
-  "dist/custom.css": "dist/custom.css",
-  "dist/custom.js": "dist/custom.js",
-  "dist/vendor.css": "dist/vendor.css",
-  "dist/vendor.js": "dist/vendor.js"
-}
