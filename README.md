@@ -10,8 +10,6 @@ All CSS/JS dependencies are listed in `package.json` and merged and minified in 
 
 ### Source CSS files
 
-#### Source theme CSS files
-
 ```sh
 # Bootstrap based .less theme files:
 /prelive_protected/css/theme   
@@ -25,9 +23,6 @@ All CSS/JS dependencies are listed in `package.json` and merged and minified in 
 # Other theme files
 /prelive_protected/css/theme/*.less 
 
-#### Source custom CSS files
-
-```sh
 # Stuff extracted out of original styles.css file. Contains
 #   - Acceptance
 #   - Workers-info-to-send
