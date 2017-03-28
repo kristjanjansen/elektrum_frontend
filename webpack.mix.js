@@ -1,7 +1,6 @@
 var mix = require('laravel-mix')
 
 mix.options({
-    //processCssUrls: false,
     publicPath: 'prelive'
 });
 
