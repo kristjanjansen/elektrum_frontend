@@ -19,13 +19,18 @@
     "webpack-dev-server": "^2.2.0"
   },
   "dependencies": {
+    "bootbox": "^4.4.0",
     "bootstrap": "^3.3.7",
+    "bootstrap-tokenfield": "^0.12.0",
+    "daterangepicker": "^0.0.3",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "jquery-ui-dist": "^1.12.1",
     "jquery-ui-timepicker-addon": "^1.6.3",
     "less": "^2.7.2",
     "less-loader": "^4.0.2",
+    "moment": "^2.18.1",
+    "select2": "^4.0.3",
     "serve": "^5.1.1",
     "style-loader": "^0.16.0"
   }
